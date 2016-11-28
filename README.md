@@ -2,7 +2,7 @@
 #### Simple Demo Project for Dummy Test APIs
 
 
-#### * app.js
+####-------------------- app.js --------------------
 ```javascript
 var path = require('path');
 var monk = require('monk');
@@ -223,7 +223,7 @@ exports.viewProfile = function(request, response, next) {
     }
 };
 ``` 
-******************** sample-requests.txt ********************
+####-------------------- sample-requests.txt ********************
 ```javascript
 /*** Request for Sign In ***/
 $.ajax({
