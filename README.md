@@ -66,7 +66,7 @@ app.use(function(req, res, next) {
 module.exports = app;
 ```
 
-******************** routes/users.js ********************
+####-------------------- routes/users.js -------------------- 
 ```javascript
 var utils = require('../utils/app-utils');
 var dateFormatLite = require('date-format-lite');
@@ -223,7 +223,7 @@ exports.viewProfile = function(request, response, next) {
     }
 };
 ``` 
-####-------------------- sample-requests.txt ********************
+####-------------------- sample-requests.txt -------------------- 
 ```javascript
 /*** Request for Sign In ***/
 $.ajax({
