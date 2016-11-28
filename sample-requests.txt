@@ -1,0 +1,45 @@
+/*** Request for Sign In ***/
+$.ajax({
+    url: 'https://test-api-laique.c9users.io/signIn',
+    type: 'post',
+    data: {
+        username: 'laique',
+        password: 'daudpota'
+    },
+    success: function(response) {
+        console.log(response);
+    }
+});
+
+
+/*** Request for Sign Up ***/
+$.ajax({
+    url: 'https://test-api-laique.c9users.io/signUp',
+    type: 'post',
+    data: {
+        username: 'laique123',
+        password: 'daudpota',
+        firstName: 'Laique Ali',
+        lastName: 'Daudpota'
+    },
+    success: function(response) {
+        console.log(response);
+    }
+});
+
+/*** Request for View Valid User Profile ***/
+#1 Request -> https://test-api-laique.c9users.io/viewProfile?username=laique&password=daudpota
+
+#2 Request -> 
+$.ajax({
+    url: 'https://test-api-laique.c9users.io/viewProfile',
+    data: {
+        username: 'laique123',
+        password: 'daudpota'
+    },
+    success: function(response) {
+        console.log(response);
+    }
+});
+
+https://test-api-laique.c9users.io/
