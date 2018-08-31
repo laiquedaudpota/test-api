@@ -228,11 +228,11 @@ exports.viewProfile = function(request, response, next) {
 ```javascript
 /*** Request for Sign In ***/
 $.ajax({
-    url: 'https://test-api-laique.c9users.io/signIn',
+    url: '/signIn',
     type: 'post',
     data: {
         username: 'laique',
-        password: 'daudpota'
+        password: 'testing123'
     },
     success: function(response) {
         console.log(response);
@@ -242,11 +242,11 @@ $.ajax({
 
 /*** Request for Sign Up ***/
 $.ajax({
-    url: 'https://test-api-laique.c9users.io/signUp',
+    url: '/signUp',
     type: 'post',
     data: {
         username: 'laique123',
-        password: 'daudpota',
+        password: 'testing123',
         firstName: 'Laique Ali',
         lastName: 'Daudpota'
     },
@@ -260,10 +260,10 @@ $.ajax({
 
 #2 Request -> 
 $.ajax({
-    url: 'https://test-api-laique.c9users.io/viewProfile',
+    url: '/viewProfile',
     data: {
         username: 'laique123',
-        password: 'daudpota'
+        password: 'testing123'
     },
     success: function(response) {
         console.log(response);
